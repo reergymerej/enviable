@@ -1,8 +1,8 @@
 # enviable
 
-Reads values from .env.
-Find source files.
-replaces in source.
+reads from .env, replaces in files
+
+[![Build Status](https://travis-ci.com/reergymerej/enviable.svg?token=AiAzfY2MJmZkDBAp517s&branch=master)](https://travis-ci.com/reergymerej/enviable)
 
 Get a map of values.
 
@@ -47,6 +47,13 @@ STATS = { age: 33, male: false }
 ### Step 3
 
 Do the magic.
+You can run this from the command line, passing a
+[glob](https://www.npmjs.com/package/glob#glob-primer) for it to search through.
+
+```sh
+./node_modules/.bin/enviable "src/**/*.js"
+```
+
 Your source will now be.
 
 ```js

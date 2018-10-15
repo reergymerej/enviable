@@ -1,7 +1,16 @@
 {
   "version": "1.0.0",
   "name": "enviable",
+  "description": "reads from .env, replaces in files",
+  "keywords": [
+    ".env",
+    "environment variables",
+    "replacement"
+  ],
   "main": "lib/index.js",
+  "bin": {
+    "enviable": "./lib/cli.js"
+  },
   "scripts": {
     "start": "babel-node src/index.js",
     "test": "jest src/ --config jest.config.js",
@@ -21,5 +30,17 @@
     "jest": "^22.0.3"
   },
   "dependencies": {},
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reergymerej/enviable.git"
+  },
+  "author": "Jeremy Greer <jex.grizzle@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/reergymerej/enviable/issues"
+  },
+  "homepage": "https://github.com/reergymerej/enviable#readme"
 }
